@@ -11,7 +11,7 @@
     <h1 id="title">Cirilla page</h1>
     <p id="description">This is a private page, you must register.</p>
   </div>
-  
+
   <form id="survey-form" class="form-survey">
     <div>
       <input type="text" id="name" placeholder="Name">
@@ -19,6 +19,7 @@
       <input type="number" id="phonenumber" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the correct number format">
     </div>
     <div>
+      <p>City:</p>
       <select name="City" id="dropdown">
         <option value="Option1">Praha</option>
         <option value="Option2">Bratislava</option>
@@ -31,11 +32,14 @@
       <label>
         <p>Check your age:</p>
         <input name="age" type="radio" checked>
+        <input name="age" type="radio" checked>
       </label>
     </div>
     <div>
       <label>
         <p>Check your favorite color:</p>
+        <input name="color-favorite" type="checkbox">
+        <input name="color-favorite" type="checkbox">
         <input name="color-favorite" type="checkbox">
       </label>
     </div>
