@@ -7,6 +7,41 @@
   <title>Survey Form</title>  
 </head>
 <body>
-  
+  <h1 id="title">Cirilla page</h1>
+  <p id="description">This is a private page, you must register.</p>
+  <form id="survey-form" class="form_survey">
+    <div>
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" title="Use the correct email format">
+      <input type="number" id="phonenumber" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the correct number format">
+    </div>
+    <div>
+      <select name="City" id="dropdown">
+        <option value="Option1">Praha</option>
+        <option value="Option2">Bratislava</option>
+        <option value="Option3">Liberec</option>
+        <option value="Option4">Brno</option>
+        <option value="Option5">Košice</option>
+      </select>
+    </div>
+    <div>
+      <label>
+        <p>Check your age:</p>
+        <input name="age" type="radio" checked>
+      </label>
+    </div>
+    <div>
+      <label>
+        <p>Check your favorite color:</p>
+        <input name="color-favorite" type="checkbox">
+      </label>
+    </div>
+    <div>
+      <p>Space for your comments:</p>
+      <textarea name="comment" id="comments"></textarea>
+    </div>
+      <button id="submit">Submit</button>
+  </form>
+
 </body>
 </html>
