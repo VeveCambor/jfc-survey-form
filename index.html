@@ -7,8 +7,8 @@
   <title>Survey Form</title>  
 </head>
 <body>
-  <div class="form-survey">
-    <h1 id="title" class="title">Cirilla page</h1>
+  <div class="title">
+    <h1 id="title">Cirilla page</h1>
     <p id="description">This is a private page, you must register.</p>
   </div>
 
@@ -19,8 +19,7 @@
       <input type="number" id="phonenumber" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the correct number format">
     </div>
     <div>
-      <p>City:</p>
-      <select name="City" id="dropdown">
+      <select name="City" id="dropdown" aria-placeholder="City">
         <option value="Option1">Praha</option>
         <option value="Option2">Bratislava</option>
         <option value="Option3">Liberec</option>
