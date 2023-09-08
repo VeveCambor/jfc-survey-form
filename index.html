@@ -11,14 +11,11 @@
     <h1 id="title">Cirilla page</h1>
     <p id="description">This is a private page, you must register.</p>
   </div>
-
   <form id="survey-form" class="form-survey">
     <div>
-      <input type="text" id="name" placeholder="Name">
-      <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" title="Use the correct email format">
-      <input type="number" id="phonenumber" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the correct number format">
-    </div>
-    <div>
+      <input type="text" id="name" placeholder="Name" class="input-form">
+      <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" title="Use the correct email format" class="input-form">
+      <input type="number" id="phonenumber" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the correct number format" class="input-form">
       <select name="City" id="dropdown">
         <option value="Option0">City</option>
         <option value="Option1">Praha</option>
@@ -28,19 +25,30 @@
         <option value="Option5">Košice</option>
       </select>
     </div>
-    <div>
-      <label>
-        <p>Check your age:</p>
-        <input name="age" type="radio" checked>
-        <input name="age" type="radio" checked>
+    <div class="radio-wrap">
+      <p>Check your age:</p>
+      <label class="label-radio">
+        <input name="age" type="radio" class="check-radio" checked>
+        Kid
+      </label>
+      <label class="label-radio">
+        <input name="age" type="radio" class="check-radio" checked>
+        Adult
       </label>
     </div>
-    <div>
-      <label>
-        <p>Check your favorite color:</p>
-        <input name="color-favorite" type="checkbox">
-        <input name="color-favorite" type="checkbox">
-        <input name="color-favorite" type="checkbox">
+    <div class="check-wrap">
+      <p>Check your favorite color:</p>
+      <label class="label-check">
+        <input name="color-favorite" type="checkbox" class="check-box">
+        Purple
+      </label>
+      <label class="label-check">
+        <input name="color-favorite" type="checkbox" class="check-box">
+        Blue
+      </label>
+      <label class="label-check">
+        <input name="color-favorite" type="checkbox" class="check-box">
+        Black
       </label>
     </div>
     <div>
