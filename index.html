@@ -13,12 +13,12 @@
     <p id="description">This is a private page, you must register.</p>
   </div>
   <form id="survey-form" class="form-survey">
-    <div>
+    <div class="input-wrap">
       <input type="text" id="name" placeholder="Name" class="input-form">
       <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" title="Use the correct email format" class="input-form">
       <input type="number" id="phonenumber" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Use the correct number format" class="input-form">
       <select name="City" id="dropdown">
-        <option value="Option0">City</option>
+        <option value="Option0" selected disabled>City</option>
         <option value="Option1">Praha</option>
         <option value="Option2">Bratislava</option>
         <option value="Option3">Liberec</option>
