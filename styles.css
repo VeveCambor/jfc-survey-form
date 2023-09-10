@@ -44,6 +44,7 @@ body {
 
 .form-survey {
   width: 25%;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -327,10 +328,6 @@ button:hover {
 .title {
   margin-bottom: 1rem;
 }
-
-.form-survey {
-  margin-bottom: 4rem;
-}
 }
 
 @media screen and (max-width: 1100px) {
@@ -341,10 +338,6 @@ button:hover {
   .title {
     margin-bottom: 1rem;
   }
-
-  .form-survey {
-    margin-bottom: 2rem;
-  }
 }
 
 @media screen and (max-width: 850px) {
@@ -354,10 +347,6 @@ button:hover {
 
   .title {
     margin-bottom: 1rem;
-  }
-  
-  .form-survey {
-    margin-bottom: 4rem;
   }
 
   .radio-wrap {    
@@ -375,10 +364,6 @@ button:hover {
   }
   .title {
     margin-bottom: 1rem;
-  }
-
-  .form-survey {
-    margin-bottom: 4rem;
   }
 
   .radio-wrap {    
