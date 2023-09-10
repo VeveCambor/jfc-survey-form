@@ -33,7 +33,7 @@ body {
 }
 
 .title {
-  max-width: 25%;
+  width: 25%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: var(--form-bg);
@@ -157,7 +157,7 @@ body {
 }
 
 /* INPUT */
-.input-form, select {
+.input-form {
   width: 100%;
   font-size: var(--font-size);
   line-height: var(--font-size) * 2;
@@ -171,7 +171,7 @@ body {
   color: rgba(0,0,0,1);
 }
 
-.input-form:focus, select:focus {
+.input-form:focus {
   border-bottom: 5px solid var(--form-primary);
 }
 
@@ -184,8 +184,43 @@ input:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-select:first-of-type {
+/* SELECT */
+.select-selected {
+  width: 100%;
+  font-size: var(--font-size);
+  line-height: var(--font-size) * 2;
+  font-family: var(--font-face);
+  margin-bottom: 1rem;
+  border: none;
+  border-bottom: 5px solid rgba(0,0,0,1);
+  background: var(--form-bg);
+  padding-left: 5px;
+  outline: none;
   color: gray;
+}
+
+.select-selected:focus {
+  border-bottom: 5px solid var(--form-primary);
+}
+
+.select-items {
+  margin-top: 0.2rem;
+  list-style-type: none;
+  position: relative;
+  left: 0;
+  right: 0;
+  border: 2px solid #000;
+  background-color: var(--form-secondary);
+  z-index: auto;
+}
+
+.select-items li {
+  padding: 10px;
+}
+
+.select-items li:hover {
+  background-color: var(--font-color);
+  color: white;
 }
 
 /* TEXTAREA */
@@ -288,11 +323,27 @@ button:hover {
   .form-survey, .input-for, .title {
     padding: 40px 70px;
 }
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.form-survey {
+  margin-bottom: 4rem;
+}
 }
 
 @media screen and (max-width: 1100px) {
   .form-survey, .input-for, .title {
     padding: 20px 40px;
+  }
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .form-survey {
+    margin-bottom: 2rem;
   }
 }
 
@@ -301,10 +352,18 @@ button:hover {
     padding: 10px 20px;
   }
 
+  .title {
+    margin-bottom: 1rem;
+  }
+  
+  .form-survey {
+    margin-bottom: 4rem;
+  }
+
   .radio-wrap {    
     flex-direction: column;
   }
-  
+
   button {
       margin-bottom: 2rem;
   }
@@ -313,6 +372,13 @@ button:hover {
 @media screen and (max-width: 680px) {
   .form-survey, .input-form {
     padding: 5px 10px;
+  }
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .form-survey {
+    margin-bottom: 4rem;
   }
 
   .radio-wrap {    
